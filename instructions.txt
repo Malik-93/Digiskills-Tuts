@@ -1,0 +1,9 @@
+1 ->  npm install -g create-react-app
+
+ after globally package download
+
+2 -> create-react-app <project name>
+
+3 -> cd <project name>
+
+4 -> npm start
