@@ -1,19 +1,19 @@
 import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Todos from './components/Todos';
+// import './App.css';
+import Partner from './components/Partner'
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import Chat from './components/Chat';
 
 function App() {
   return (
-      <Router>
-    <div className="App">
-    <h1>Hello React</h1>
-    <Link to='/todos' >Todos</Link>
-      <Switch>
-      <Route path = '/todos' component={ Todos } />
-      </Switch>
-    </div>
-    </Router>
+<BrowserRouter>
+    <div>
+  <Switch>
+    <Route exact path='/'  component = { Chat } />
+    <Route path='/partner' component={Partner} />
+  </Switch>
+  </div>
+  </BrowserRouter>
   );
 }
 
